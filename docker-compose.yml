@@ -1,0 +1,10 @@
+version: '3'
+services:
+  FTP-Server:
+    build: .
+    command: ["/bin/sh", "-c", "/bin/start-vsftpd && tail -f /dev/null"]
+    image: vsftpd
+  Parrot:
+    image: parrotsec/security
+    stdin_open: true
+    tty: true
