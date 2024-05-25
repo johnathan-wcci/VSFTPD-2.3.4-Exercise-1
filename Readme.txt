@@ -10,8 +10,8 @@ The container also contains the latest version of Parrot Security, which can be 
 - Docker Compose
 
 ## Instructions
-1. Clone this Repo: `git clone `
-2. Navigate into this folder: `cd `
+1. Clone this Repo: `git clone https://github.com/johnathan-wcci/VSFTPD-2.3.4-Exercise-1.git`
+2. Navigate into this folder: `cd VSFTPD-2.3.4-Exercise-1`
 3. Start the Docker Container: `docker compose -f .\docker-compose.yml up'
 4. Open Another Terminal.
 5. Bash into the Parrot Security Container. This is your attack machine: `docker exec -it test-ctf-Parrot-1 bash`
