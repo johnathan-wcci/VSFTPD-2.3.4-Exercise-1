@@ -24,5 +24,7 @@ ln -s /root/vsftpd-2.3.4/vsftpd /bin/vsftpd
 chmod 770 /bin/vsftpd
 ln -s /root/vsftpd-2.3.4/start-vsftpd.sh /bin/start-vsftpd
 chmod 770 /bin/start-vsftpd
+echo "Cleanup"
+rm -r /root/VSFTPD-2.3.4-Exercise-1
 echo "Starting VSFTPD!"
 start-vsftpd
