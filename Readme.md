@@ -10,7 +10,7 @@ The container also contains the latest version of Parrot Security, which can be 
 - Docker
 - Docker Compose
 
-## Instructions
+## Instructions (Local)
 
 1. Clone this Repo: `git clone https://github.com/johnathan-wcci/VSFTPD-2.3.4-Exercise-1.git`
 2. Navigate into this folder: `cd VSFTPD-2.3.4-Exercise-1`
@@ -33,6 +33,24 @@ The container also contains the latest version of Parrot Security, which can be 
 14. Find the flag: `cat ~/Documents/Important\ Keys/keys.txt`
 15. Use your favorite Base64 Decoder to decode the flag.
 16. DO NOT LEAVE THESE CONTAINERS RUNNING! Stop the docker containers by running: `docker compose -f .\docker-compose.yml down`
+
+## Deploying On Digital Ocean
+
+### Pre-requisites
+
+- A Cloud Environment
+- A Firewall Setup
+- A VPC Setup
+- A Deployed Machine Running Ubuntu 22.04, Behind Firewall and VPC
+
+### Instructions
+
+1. Clone this Repo: `git clone https://github.com/johnathan-wcci/VSFTPD-2.3.4-Exercise-1.git`
+2. Navigate into this folder: `cd VSFTPD-2.3.4-Exercise-1`
+3. Set execute permissions for the setup script: `chmod 770 digital-ocean-setup.sh`
+4. Run the setup shell script: `./digital-ocean-setup.sh`
+5. Validate FTP port is open: `ss -tunln`
+6. PLEASE DO NOT LEAVE THIS MACHINE RUNNING!
 
 ## Extra Credit
 
