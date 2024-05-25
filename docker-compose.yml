@@ -8,3 +8,5 @@ services:
     image: parrotsec/security
     stdin_open: true
     tty: true
+    volumes:
+      - ./dev/:/home/dev
